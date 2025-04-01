@@ -79,7 +79,7 @@ a {
   width: 100%;
   background: #10375c;
   z-index: 1000;
-  padding:11px 190px;
+  padding: 11px 190px;
 }
 
 .logo {
@@ -473,9 +473,9 @@ a {
   max-width: calc(100%-140px);
   justify-content: space-between;
   background: #2e80ce;
-position: relative;
-padding: 76px 70px;
-margin-top: 100px;
+  position: relative;
+  padding: 76px 70px;
+  margin-top: 100px;
 }
 
 .ctamobile__image {
@@ -483,7 +483,7 @@ margin-top: 100px;
   height: 522px;
   object-fit: cover;
   position: absolute;
-  top:-103px;
+  top: -103px;
 }
 
 .ctamobile__content {
@@ -493,45 +493,263 @@ margin-top: 100px;
   justify-content: center;
 }
 
-.ctamobile__content--download{
+.ctamobile__content--download {
   display: flex;
   gap: 30px;
-} 
+}
 
-.ctamobile__content--desc{
+.ctamobile__content--desc {
   margin: 18px 0 38px;
 }
 
 .ctamobile__download--appstore,
-.ctamobile__download--ggplay{
+.ctamobile__download--ggplay {
   border-radius: 4px;
   border: 1px solid #fff;
   display: flex;
 }
 
-.download__app--desc{
+.download__app--desc {
   width: 38.848px;
-height: 6.269px;
-color: #fff;
-font-size: 0.5rem;
-font-weight: 100;
-line-height: 1.86;
+  height: 6.269px;
+  color: #fff;
+  font-size: 0.5rem;
+  font-weight: 100;
+  line-height: 1.86;
 }
 
-
-
-.download__app--name{
+.download__app--name {
   width: 84.776px;
-height: 17.03px;
-color: #fff;
-font-size: 1rem;
-font-weight: 200;
-line-height: 1.86;
+  height: 17.03px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.86;
 }
 
-.download__icon{
+.download__icon {
   width: 23.09px;
-height: 25.721px;
-display: flex;
-    margin: 2px 4px;
+  height: 25.721px;
+  display: flex;
+  margin: 2px 4px;
 }
+
+/* ============================================ blog ======================================= */
+.blog {
+  padding: 170px 0;
+}
+
+.blog-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog__list {
+  display: flex;
+
+  gap: 30px;
+}
+
+.blog__item {
+  width: 270px;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  padding: 0 22px 22px;
+  background: #fff;
+}
+
+.blog__item:hover .blog__item--action {
+  color: #2b18f4;
+}
+
+.blog__item:hover {
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+  border: none;
+  cursor: pointer;
+}
+
+.blog__action--more {
+  color: #10375c;
+  margin: 28px 0;
+  display: inline-block;
+  float: left;
+  font-family: Inter;
+  font-size: 1.8;
+  font-weight: 600;
+  line-height: 1.56;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.blog__item--img {
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+  position: relative;
+  left: -22px;
+}
+
+.blog__item--title {
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.63;
+}
+
+.blog__item-desc {
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.71;
+  margin: 10px 0 12px;
+}
+
+.blog__action--more {
+  color: #10375c;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog__item--action:hover {
+  color: #2b18f4;
+}
+
+/* ============================== Appointment ================================= */
+.appointment {
+  padding: 100px 0;
+  margin-bottom: 170px;
+}
+
+.appointment__heading {
+  text-align: center;
+}
+
+.appointment__heading::after {
+  content: "";
+  width: 136px;
+  border: 2px solid #2b18f4;
+  position: relative;
+  display: flex;
+  bottom: -5px;
+  left: calc(50% - 48px);
+}
+
+.appointment__desc {
+  text-align: center;
+  margin-top: 38px;
+}
+
+.appointment__action {
+  line-height: 60px;
+  display: block;
+  width: 205px;
+  margin: 38px auto 0;
+}
+
+/* ================================ footer ============================== */
+.footer {
+  background: #10375c;
+  padding-top: 100px;;
+  padding-bottom: 42px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+margin-bottom: 58px;
+}
+
+.footer__title{
+  max-width: 29%;
+}
+
+.footer__title--logo {
+  display: flex;
+  
+}
+
+.footer__title--desc{
+  color: #A9B3BB;
+font-family: "Open Sans";
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 1.75; 
+margin-top: 21px;
+}
+
+.footer__heading{color: #FFF;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+.footer__social-media--icon,
+.footer__subcribe--desc,
+  .footer__support--item{
+    margin-top: 10px;
+  }
+
+  .footer__bottom--desc,
+  .footer__support--item,
+  .footer__subcribe--desc{
+    color: #A9B3BB;
+font-family: "Open Sans";
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 1.86; /* 185.714% */
+  }
+
+  .footer__email{
+    display: flex;
+  margin-top: 10px;
+  }
+
+  .footer__email--box{
+  width: 212px;
+   height: 46px;
+   border: 1px solid #fff;
+   padding: 10px 0 10px 10px;
+  }
+
+  .footer__email--box p{
+    color: #9CA8B1;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; 
+   
+  }
+
+  .footer__email--action{
+    width: 108px;
+    height: 46px;
+    display: flex;justify-content: center;align-items: center;margin-left: 12px;border-radius: 4px;
+    background: #2e80ce;
+  }
+
+  .footer__subcribe{
+    margin-top: 28px;
+  }
+
+  .footer__bottom::before{
+    content: "";
+    position: relative;
+    border: 1px solid #fff;
+    width: 100%;
+    display: flex;top: -20px;
+  }
+
+  .footer__bottom--desc{text-align: center;}
