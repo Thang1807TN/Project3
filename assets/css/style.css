@@ -22,7 +22,6 @@ body {
   width: 100%; /* Cho phép container co lại */
   padding: 0 24px; /* Thêm padding để tránh dính sát mép */
   margin: 0 auto;
-  min-width: 800px;
 }
 
 a {
@@ -73,13 +72,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0; /* Khi cuộn xuống tới header, nó sẽ dính tại vị trí này */
+  
   width: 100%;
   background: #10375c;
-  z-index: 1000;
-  padding: 11px 190px;
+  z-index: 0;
+  /* padding: 11px 190px; */
 }
 
 .logo {
@@ -302,10 +299,10 @@ a {
 }
 
 .work__list {
-  display: flex;
+  grid-template-columns: repeat(3, 1fr);
   padding-top: 102px;
   gap: 30px;
-  flex: 1;
+  display: grid;
 }
 
 .work__item {
@@ -411,8 +408,8 @@ a {
 
 .our-team__list {
   padding-top: 70px;
-  display: flex;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
