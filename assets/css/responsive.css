@@ -242,9 +242,6 @@
     body{
         overflow-x: hidden;
     }
-.container{
-    width: 100%;max-width: 100%;
-}
 
 .show-on-mobile{
     display: block;
