@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 1170px; /* Giới hạn lớn nhất */
   width: 100%; /* Cho phép container co lại */
-  padding: 0 24px; /* Thêm padding để tránh dính sát mép */
+  padding: 0 24px; 
   margin: 0 auto;
 }
 

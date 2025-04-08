@@ -8,7 +8,10 @@
 /* Tablet & mobile */
 @media (max-width: 991.98px){
 
-   
+   .container{
+    width: 100%;
+    min-width: 100%;
+   }
 
     .nav{
         display: none;
@@ -223,7 +226,7 @@
 }
 
 /*    ======================== Appointment================= */
-.
+
 }
 
 /* Tablet  */
@@ -235,6 +238,14 @@
 
 /* mobile */
 @media (max-width: 767.98px){
+
+    body{
+        overflow-x: hidden;
+    }
+.container{
+    width: 100%;max-width: 100%;
+}
+
 .show-on-mobile{
     display: block;
    list-style: none;
